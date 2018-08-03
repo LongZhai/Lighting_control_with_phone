@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;
+		
+}
+form {border: 5px solid #f78a8a;}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+.container {
+    padding: 10px;
+    margin-left: auto;
+    text-align: center;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+.content {
+	
+    left: 25%; 
+    text-align: center;
+    top: 5%;
+    width: 50%;
+    padding: 10px;
+    position: absolute;
+}
+
+</style>
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="bubble.mov" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+<h2>Lighting control</h2>
+
+<form action = "button.php" method = "POST">
+  <div class="imgcontainer">
+    <img src="light.jpg" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <input type = "submit" name ="on" id="on" value = "Turn On">
+	<input type = "submit" name ="off" id="off" value = "Turn Off">
+  </div>
+  <button type="button" id="myBtn" onclick="myFunction()">Pause background video</button>
+</form>
+
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</body>
+</html>
