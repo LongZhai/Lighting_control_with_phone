@@ -39,10 +39,11 @@ buttonStatus.php: 1.read switch status from buttonStatus.txt;
 buttonStatus.txt: 1. The buttonStatus.txt can be considered as a database to save     information (we only have one datum so installing database is not necessary);
 
 
-All files have only one responsibility(singleton design pattern), and the project is scalable. There are several updates can be considered:
+All files have only one responsibility(high cohesion and low coupling ), and the project is scalable. There are several updates can be considered:
 1. To show how long the light has been turned on/off. (
 Method: time_t t = now(); // Store the current time
 save current time whenever there is a button status change and compare them so that we can get a light usage report.
 2. Control all lights at home.
         
 
+Background videos are too big so I did upload videos and pictures but you can use your video as background.
