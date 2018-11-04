@@ -46,4 +46,4 @@ save current time whenever there is a button status change and compare them so t
 2. Control all lights at home.
         
 
-Background videos are too big so I did upload videos and pictures but you can use your video as background.
+HTML Background videos are too big so I did upload videos and pictures but you can use your video as background.
